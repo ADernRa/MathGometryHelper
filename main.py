@@ -1,10 +1,8 @@
 from tkinter import *
 from PIL import ImageTk
+import calculator
+import clear
 main_win = Tk()
-
-def ClearWin():
-    for widget in main_win.winfo_children():
-        widget.destroy()
     
 def CreateWin():
     main_win.title("MathHelper")
@@ -15,7 +13,7 @@ def CreateWin():
     main_win.iconphoto(False, icon)
 
 def MainWin():
-    ClearWin()
+    clear.ClearWin(main_win)
 
     tr_side = ImageTk.PhotoImage(file = "MenuPng/tr_side.png")
     btn_tr_side= Button(text="Найти сторону",image=tr_side, width=140, height=150, compound="top",  font=("Arial", 16))
@@ -49,8 +47,8 @@ def MainWin():
 
 
 
-    calculator = ImageTk.PhotoImage(file = "MenuPng/calculator.png")
-    btn_calculator= Button(text="Простой\n калькулятор",image=calculator, width=140, height=150, compound="top",  font=("Arial", 16))
+    calculator_img = ImageTk.PhotoImage(file = "MenuPng/calculator.png")
+    btn_calculator= Button(text="Простой\n калькулятор",image=calculator_img, width=140, height=150, compound="top",  font=("Arial", 16), command=lambda: calculator.calculator(main_win))
     btn_calculator.place(anchor="c", y=330, x = 110)
     btn_calculator_help= Button(text=" ? ", width=1, height=1,  font=("Arial", 16))
     btn_calculator_help.place(anchor="c", y=273, x = 195)
