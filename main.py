@@ -10,7 +10,6 @@ def CreateWin():
     icon = PhotoImage(file = "icon.png")
     main_win.iconphoto(False, icon)
 
-
 CreateWin()
 MainWin(main_win)
 
