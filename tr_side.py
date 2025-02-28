@@ -129,7 +129,7 @@ def tr_side(main_win):
         lbl_error.place(anchor=CENTER, x=285, y=520)
 
     def search_AB():
-        lbl_info["text"] = "Введіть довжину сторін"
+        lbl_info["text"] = "Введите длину сторон"
         btn_BC.destroy()
         btn_AC.destroy()
         btn_AB.destroy()
@@ -178,7 +178,7 @@ def tr_side(main_win):
         lbl_error = Label(textvariable=error_str, font=["Arial", 14], fg="red", bg="black")
         lbl_error.place(anchor=CENTER, x=285, y=520)
 
-    lbl_info = Label(font=["Arial",14], bg="black", fg="White", text="Оберіть сторону яку потрібно знайти")
+    lbl_info = Label(font=["Arial",14], bg="black", fg="White", text="Выберите сторону которую необходимо найти")
     lbl_info.place(anchor=CENTER, x=300, y=40)
 
     lbl_A = Label(font=["Arial",14], bg="black", fg="White", text="A")
