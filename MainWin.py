@@ -3,11 +3,12 @@ from tkinter import *
 from PIL import ImageTk
 import calculator
 import tr_side
+
 def MainWin(main_win):
     clear.ClearWin(main_win)
 
     tr_side_img = ImageTk.PhotoImage(file = "MenuPng/tr_side.png")
-    btn_tr_side= Button(text="Найти сторону",image=tr_side_img, width=140, height=150, compound="top",  font=("Arial", 16))
+    btn_tr_side= Button(text="Найти сторону",image=tr_side_img, width=140, height=150, compound="top",  font=("Arial", 16), command=lambda: tr_side.tr_side(main_win))
     btn_tr_side.place(anchor="c", y=130, x = 110)
 
     tr_corner = ImageTk.PhotoImage(file = "MenuPng/tr_corner.png")
