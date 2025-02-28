@@ -12,5 +12,4 @@ def CreateWin():
 
 CreateWin()
 MainWin(main_win)
-
 main_win.mainloop()
