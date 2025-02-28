@@ -29,6 +29,9 @@ def tr_side(main_win):
 
         entry_AB = Entry(width=5, validate='key', validatecommand=vcmd)
         entry_AB.place(anchor=CENTER, x=350, y=230)
+        
+        btn_back= Button(text="В начало", width=8, height=2, compound="top",  font=("Arial", 16), command=lambda: tr_side(main_win))
+        btn_back.place(anchor="c", y=130, x = 1000)
 
         def start():
             if entry_AB.get() == '' or entry_BC.get() == '':
@@ -44,7 +47,24 @@ def tr_side(main_win):
                 error_str.set("")
                 AB = float(entry_AB.get())
                 BC = float(entry_BC.get())
-            
+
+                entry_AB.destroy()
+                entry_BC.destroy()
+                btn_start.destroy()
+
+                lbl_BC = Label(text=BC,font=["Arial", 14], fg="white", bg="black")
+                lbl_BC.place(anchor=CENTER, x=280, y=400)
+
+                lbl_AB = Label(text=AB,font=["Arial", 14], fg="white", bg="black")
+                lbl_AB.place(anchor=CENTER, x=350, y=230)
+
+                AC = round(math.sqrt(pow(AB, 2)-pow(BC, 2)),2)
+                lbl_AC = Label(text=AC,font=["Arial", 14], fg="white", bg="black")
+                lbl_AC.place(anchor=CENTER, x=140, y=250)
+
+                lbl_teor = Label(justify=LEFT, font=["Arial", 22],bg="black", fg="White", text=f"AC = √(AB²-BC²)\nAC = √({AB}²-{BC}²)\nAC = √({pow(AB,2)}-{pow(BC,2)})\nAC = √{pow(AB,2)-pow(BC,2)}\nAC = {AC}")
+                lbl_teor.place( anchor=CENTER,x=700, y=200)
+
         btn_start = Button(text="Знайти сторону",font=["Arial",14], width=15, height=2, command=start)
         btn_start.place(anchor=CENTER, x=285, y=470)
 
