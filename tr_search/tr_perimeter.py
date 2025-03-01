@@ -55,7 +55,7 @@ def tr_perimeter(main_win):
             if BC == AB and AB == AC and AC == BC:
                 tr_type = tr_type + "\nравносторонний "
             elif BC == AB or AB == AC or AC == BC:
-                tr_type = "\npавнобедренный "
+                tr_type = tr_type + "\npавнобедренный "
                 
             if pow(AB, 2) == pow(BC,2) + pow(AC, 2) or pow(BC, 2) == pow(AB,2) + pow(AC, 2) or pow(AC, 2) == pow(AB,2) + pow(BC, 2):
                 tr_type = tr_type + "\nпрямоугольный"
