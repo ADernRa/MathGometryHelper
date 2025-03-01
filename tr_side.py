@@ -65,7 +65,7 @@ def tr_side(main_win):
                 lbl_teor = Label(justify=LEFT, font=["Arial", 22],bg="black", fg="White", text=f"AC = √(AB²-BC²)\nAC = √({AB}²-{BC}²)\nAC = √({pow(AB,2)}-{pow(BC,2)})\nAC = √{pow(AB,2)-pow(BC,2)}\nAC = {AC}")
                 lbl_teor.place( anchor=CENTER,x=700, y=200)
 
-        btn_start = Button(text="Знайти сторону",font=["Arial",14], width=15, height=2, command=start)
+        btn_start = Button(text="Найти сторону",font=["Arial",14], width=15, height=2, command=start)
         btn_start.place(anchor=CENTER, x=285, y=470)
 
         error_str = StringVar()
@@ -121,7 +121,7 @@ def tr_side(main_win):
                 lbl_teor = Label(justify=LEFT, font=["Arial", 22],bg="black", fg="White", text=f"BC = √(AB²-AC²)\nBC = √({AB}²-{AC}²)\nBC = √({pow(AB,2)}-{pow(AC,2)})\nBC = √{pow(AB,2)-pow(AC,2)}\nBC = {BC}")
                 lbl_teor.place( anchor=CENTER,x=700, y=200)
 
-        btn_start = Button(text="Знайти сторону",font=["Arial",14], width=15, height=2, command=start)
+        btn_start = Button(text="Найти сторону",font=["Arial",14], width=15, height=2, command=start)
         btn_start.place(anchor=CENTER, x=285, y=470)
 
         error_str = StringVar()
@@ -171,7 +171,7 @@ def tr_side(main_win):
                 lbl_teor = Label(justify=LEFT, font=["Arial", 22],bg="black", fg="White", text=f"AB = √(BC²+AC²)\nAB = √({BC}²+{AC}²)\nAB = √({pow(BC,2)}+{pow(AC,2)})\nAB = √{pow(BC,2)+pow(AC,2)}\nAB = {AB}")
                 lbl_teor.place( anchor=CENTER,x=700, y=200)
 
-        btn_start = Button(text="Знайти сторону",font=["Arial",14], width=15, height=2, command=start)
+        btn_start = Button(text="Найти сторону",font=["Arial",14], width=15, height=2, command=start)
         btn_start.place(anchor=CENTER, x=285, y=470)
 
         error_str = StringVar()
