@@ -34,7 +34,7 @@ def tr_perimeter(main_win):
 
             btn_back= Button(text="В начало", width=8, height=2, compound="top",  font=("Arial", 16), command=lambda: tr_perimeter(main_win))
             btn_back.place(anchor="c", y=130, x = 1000)
-
+        
             lbl_info.destroy()
             btn_start.destroy()
             ent_BC.destroy()
@@ -56,24 +56,12 @@ def tr_perimeter(main_win):
                 tr_type = tr_type + "\nравносторонний "
             elif BC == AB or AB == AC or AC == BC:
                 tr_type = "\npавнобедренный "
-            
-            max_side = max(AB, AC, BC)
-            sides = [AB, AC, BC]
-            check = False
-            sidee = [0,0]
-            i=0
-            for side in sides:
-                if side == max_side and check == False:
-                    check = True
-                elif side != max_side or check == True:
-                    sidee[i] = side
-                    i=1
-            print(max_side, sidee[0], sidee[1])
+                
             if pow(AB, 2) == pow(BC,2) + pow(AC, 2) or pow(BC, 2) == pow(AB,2) + pow(AC, 2) or pow(AC, 2) == pow(AB,2) + pow(BC, 2):
                 tr_type = tr_type + "\nпрямоугольный"
-            elif pow(max_side, 2) <  pow(sidee[1], 2) + pow(sidee[0], 2):
+            elif pow(AB, 2) < pow(BC,2) + pow(AC, 2) and pow(BC, 2) < pow(AB,2) + pow(AC, 2) and pow(AC, 2) < pow(AB,2) + pow(BC, 2):
                 tr_type = tr_type + "\nостроугольный"
-            elif pow(max_side, 2) >  pow(sidee[1], 2) + pow(sidee[0], 2):
+            elif pow(AB, 2) > pow(BC,2) + pow(AC, 2) or pow(BC, 2) > pow(AB,2) + pow(AC, 2) or pow(AC, 2) > pow(AB,2) + pow(BC, 2):
                 tr_type = tr_type + "\nтупоугольный"
 
             lbl_teor = Label(justify=LEFT, font=["Arial", 22],bg="black", fg="White", text=f"P = AB + BC + AC\nP = {AB} + {BC} + {AC}\nP = {P}\n{tr_type}")
