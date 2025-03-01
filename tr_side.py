@@ -40,8 +40,8 @@ def tr_side(main_win):
             elif float(entry_AB.get()) == 0 or float(entry_BC.get()) == 0:
                 error_str.set("Сторона должна быть больше за 0")
                 return
-            elif float(entry_AB.get())<float(entry_BC.get()):
-                error_str.set("Гипотинуза не может быть короче катета")
+            elif float(entry_AB.get())<=float(entry_BC.get()):
+                error_str.set("Гипотинуза должна быть длинее катета")
                 return
             else:
                 error_str.set("")
@@ -96,8 +96,8 @@ def tr_side(main_win):
             elif float(entry_AB.get()) == 0 or float(entry_AC.get()) == 0:
                 error_str.set("Сторона должна быть больше за 0")
                 return
-            elif float(entry_AB.get())<float(entry_AC.get()):
-                error_str.set("Гипотинуза не может быть короче катета")
+            elif float(entry_AB.get())<=float(entry_AC.get()):
+                error_str.set("Гипотинуза должна быть длинее катета")
                 return
             else:
                 error_str.set("")
