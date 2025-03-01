@@ -2,8 +2,9 @@ import clear
 from tkinter import *
 from PIL import ImageTk
 import calculator
-import tr_side
-import tr_corner
+import tr_search.tr_side as tr_side
+import tr_search.tr_corner as tr_corner
+import tr_search.tr_perimeter as tr_perimeter
 
 def MainWin(main_win):
     clear.ClearWin(main_win)
@@ -24,8 +25,8 @@ def MainWin(main_win):
     btn_tr_sincos= Button(text="Найти сторону\n через угол",image=tr_sincos, width=140, height=150, compound="top",  font=("Arial", 16))
     btn_tr_sincos.place(anchor="c", y=130, x = 710)
 
-    tr_perimeter = ImageTk.PhotoImage(file = "MenuPng/tr_perimeter.png")
-    btn_tr_perimeter= Button(text="Найти\n периметр",image=tr_perimeter, width=140, height=150, compound="top",  font=("Arial", 16))
+    tr_perimeter_img = ImageTk.PhotoImage(file = "MenuPng/tr_perimeter.png")
+    btn_tr_perimeter= Button(text="Найти\n периметр",image=tr_perimeter_img, width=140, height=150, compound="top",  font=("Arial", 16),command=lambda: tr_perimeter.tr_perimeter(main_win))
     btn_tr_perimeter.place(anchor="c", y=130, x = 910)
 
 

@@ -23,7 +23,7 @@ def tr_side(main_win):
         btn_BC.destroy()
         btn_AC.destroy()
         btn_AB.destroy()
-
+        
         entry_BC = Entry(width=5, validate='key', validatecommand=vcmd)
         entry_BC.place(anchor=CENTER, x=280, y=400)
 
@@ -47,7 +47,8 @@ def tr_side(main_win):
                 error_str.set("")
                 AB = float(entry_AB.get())
                 BC = float(entry_BC.get())
-
+                
+                lbl_info.destroy()
                 entry_AB.destroy()
                 entry_BC.destroy()
                 btn_start.destroy()
@@ -104,6 +105,7 @@ def tr_side(main_win):
                 AB = float(entry_AB.get())
                 AC = float(entry_AC.get())
             
+                lbl_info.destroy()
                 entry_AB.destroy()
                 entry_AC.destroy()
                 btn_start.destroy()
@@ -154,6 +156,8 @@ def tr_side(main_win):
                 error_str.set("")
                 BC = float(entry_BC.get())
                 AC = float(entry_AC.get())
+
+                lbl_info.destroy()
                 entry_BC.destroy()
                 entry_AC.destroy()
                 btn_start.destroy()

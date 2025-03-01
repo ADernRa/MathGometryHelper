@@ -42,7 +42,7 @@ def tr_corner(main_win):
                 cor1_entry.destroy()
                 cor2_entry.destroy()
                 btn_start.destroy()
-                
+                lbl_info.destroy()
                 if corner == 'A':
                     lbl_B = Label(font=["Arial", 14], fg="white", bg="black", text=cor1)
                     lbl_B.place(anchor=CENTER, x=340,y=80)
