@@ -1,7 +1,8 @@
 import clear
 from tkinter import *
 from PIL import ImageTk
-import calculator
+import alg_search.square_table as square_table
+import alg_search.calculator as calculator
 import tr_search.tr_side as tr_side
 import tr_search.tr_corner as tr_corner
 import tr_search.tr_perimeter as tr_perimeter
@@ -35,8 +36,8 @@ def MainWin(main_win):
     btn_calculator= Button(text="Простой\n калькулятор",image=calculator_img, width=140, height=150, compound="top",  font=("Arial", 16), command=lambda: calculator.calculator(main_win))
     btn_calculator.place(anchor="c", y=330, x = 110)
 
-    square_table = ImageTk.PhotoImage(file = "MenuPng/square_table.png")
-    btn_square_table= Button(text="Таблица\n квадратов",image=square_table, width=140, height=150, compound="top",  font=("Arial", 16))
+    square_table_img = ImageTk.PhotoImage(file = "MenuPng/square_table.png")
+    btn_square_table= Button(text="Таблица\n квадратов",image=square_table_img, width=140, height=150, compound="top",  font=("Arial", 16), command=lambda: square_table.square_table(main_win))
     btn_square_table.place(anchor="c", y=330, x = 310)
 
     corners = ImageTk.PhotoImage(file = "MenuPng/corners.png")

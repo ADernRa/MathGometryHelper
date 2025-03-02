@@ -1,6 +1,5 @@
 from tkinter import *
 import clear
-import math
 import MainWin
 
 def tr_perimeter(main_win):
