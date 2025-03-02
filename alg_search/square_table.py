@@ -136,3 +136,6 @@ def square_table(main_win):
     error_str = StringVar()
     lbl_error = Label(textvariable=error_str, font=["Arial", 14], fg="red", bg="black")
     lbl_error.place(anchor=CENTER, x=540, y=400)
+
+    btn_back= Button(text="В меню", width=8, height=2, compound="top",  font=("Arial", 16), command=lambda: MainWin.MainWin(main_win))
+    btn_back.place(anchor="c", y=500, x = 1000)
