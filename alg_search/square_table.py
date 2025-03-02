@@ -52,15 +52,15 @@ def square_table(main_win):
             page = page + 1
             for i in range((page-1)*values , page*values+1):
                 val = i+1
-                if val <= 15+(page-1)*75:
+                if val <= 15+(page-1)*values:
                     my_page[0] = my_page[0] + f"{val} * {val} = {pow(val, 2)}\n"
-                elif val > 15+(page-1)*75 and val <= 30+(page-1)*75:
+                elif val > 15+(page-1)*values and val <= 30+(page-1)*values:
                     my_page[1] = my_page[1] + f"{val} * {val} = {pow(val, 2)}\n"
-                elif val > 30+(page-1)*75 and val <= 45+(page-1)*75:
+                elif val > 30+(page-1)*values and val <= 45+(page-1)*values:
                     my_page[2] = my_page[2] + f"{val} * {val} = {pow(val, 2)}\n"
-                elif val > 45+(page-1)*75 and val <= 60+(page-1)*75:
+                elif val > 45+(page-1)*values and val <= 60+(page-1)*values:
                     my_page[3] = my_page[3] + f"{val} * {val} = {pow(val, 2)}\n"
-                elif val > 60+(page-1)*75 and val <= 75+(page-1)*75:
+                elif val > 60+(page-1)*values and val <= 75+(page-1)*values:
                     my_page[4] = my_page[4] + f"{val} * {val} = {pow(val, 2)}\n"
 
         elif(action == "left"):
@@ -70,15 +70,15 @@ def square_table(main_win):
             page = page - 1
             for i in range((page-1)*values , page*values+1):
                 val = i+1
-                if val <= 15+(page-1)*75:
+                if val <= 15+(page-1)*values:
                     my_page[0] = my_page[0] + f"{val} * {val} = {pow(val, 2)}\n"
-                elif val > 15+(page-1)*75 and val <= 30+(page-1)*75:
+                elif val > 15+(page-1)*values and val <= 30+(page-1)*values:
                     my_page[1] = my_page[1] + f"{val} * {val} = {pow(val, 2)}\n"
-                elif val > 30+(page-1)*75 and val <= 45+(page-1)*75:
+                elif val > 30+(page-1)*values and val <= 45+(page-1)*values:
                     my_page[2] = my_page[2] + f"{val} * {val} = {pow(val, 2)}\n"
-                elif val > 45+(page-1)*75 and val <= 60+(page-1)*75:
+                elif val > 45+(page-1)*values and val <= 60+(page-1)*values:
                     my_page[3] = my_page[3] + f"{val} * {val} = {pow(val, 2)}\n"
-                elif val > 60+(page-1)*75 and val <= 75+(page-1)*75:
+                elif val > 60+(page-1)*values and val <= 75+(page-1)*values:
                     my_page[4] = my_page[4] + f"{val} * {val} = {pow(val, 2)}\n"
 
         elif(action == "search"):
@@ -91,24 +91,24 @@ def square_table(main_win):
                 return
         
             while True:
-                if (page-1)*75 < value and 75+(page-1)*75 < value:
+                if (page-1)*values < value and values+(page-1)*values < value:
                     page = page + 1
-                elif (page-1)*75 > value and 75+(page-1)*75 > value:
+                elif (page-1)*values > value and values+(page-1)*values > value:
                     page = page - 1
                 else:
                     break
                     
             for i in range((page-1)*values , page*values+1):
                 val = i+1
-                if val <= 15+(page-1)*75:
+                if val <= 15+(page-1)*values:
                     my_page[0] = my_page[0] + f"{val} * {val} = {pow(val, 2)}\n"
-                elif val > 15+(page-1)*75 and val <= 30+(page-1)*75:
+                elif val > 15+(page-1)*values and val <= 30+(page-1)*values:
                     my_page[1] = my_page[1] + f"{val} * {val} = {pow(val, 2)}\n"
-                elif val > 30+(page-1)*75 and val <= 45+(page-1)*75:
+                elif val > 30+(page-1)*values and val <= 45+(page-1)*values:
                     my_page[2] = my_page[2] + f"{val} * {val} = {pow(val, 2)}\n"
-                elif val > 45+(page-1)*75 and val <= 60+(page-1)*75:
+                elif val > 45+(page-1)*values and val <= 60+(page-1)*values:
                     my_page[3] = my_page[3] + f"{val} * {val} = {pow(val, 2)}\n"
-                elif val > 60+(page-1)*75 and val <= 75+(page-1)*75:
+                elif val > 60+(page-1)*values and val <= 75+(page-1)*values:
                     my_page[4] = my_page[4] + f"{val} * {val} = {pow(val, 2)}\n"
 
 
