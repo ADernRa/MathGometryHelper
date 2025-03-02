@@ -3,6 +3,7 @@ from tkinter import *
 from PIL import ImageTk
 import alg_search.square_table as square_table
 import alg_search.calculator as calculator
+import alg_search.corners_table as corners_table
 import tr_search.tr_side as tr_side
 import tr_search.tr_corner as tr_corner
 import tr_search.tr_perimeter as tr_perimeter
@@ -40,9 +41,9 @@ def MainWin(main_win):
     btn_square_table= Button(text="Таблица\n квадратов",image=square_table_img, width=140, height=150, compound="top",  font=("Arial", 16), command=lambda: square_table.square_table(main_win))
     btn_square_table.place(anchor="c", y=330, x = 310)
 
-    corners = ImageTk.PhotoImage(file = "MenuPng/corners.png")
-    btn_corners= Button(text="Таблица\nуглов",image=corners, width=140, height=150, compound="top",  font=("Arial", 16))
-    btn_corners.place(anchor="c", y=330, x = 510)
+    corners_table_img = ImageTk.PhotoImage(file = "MenuPng/corners.png")
+    btn_corners_table= Button(text="Таблица\nуглов",image=corners_table_img, width=140, height=150, compound="top",  font=("Arial", 16), command=lambda: corners_table.corners_table(main_win))
+    btn_corners_table.place(anchor="c", y=330, x = 510)
 
     percent = ImageTk.PhotoImage(file = "MenuPng/percent.png")
     btn_percent= Button(text="Найти %\n от числа",image=percent, width=140, height=150, compound="top",  font=("Arial", 16))
