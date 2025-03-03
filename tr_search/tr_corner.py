@@ -90,30 +90,30 @@ def tr_corner(main_win):
         lbl_error.place(anchor=CENTER, x=285, y=520)
 
         if corner == 'A':
-            entry_B = Entry(width=5, validate='key', validatecommand=vcmd)
+            entry_B = Entry(width=4, validate='key', validatecommand=vcmd, font=("Arial", 14), bg="gray", fg="black") 
             entry_B.place(anchor=CENTER, x=330,y=80)
 
-            entry_C = Entry(width=5, validate='key', validatecommand=vcmd)
+            entry_C = Entry(width=4, validate='key', validatecommand=vcmd, font=("Arial", 14), bg="gray", fg="black") 
             entry_C.place(anchor=CENTER, x=470,y=380)
 
             btn_start = Button(text="Найти угол",font=["Arial",14], width=15, height=2, command=lambda: start(entry_B, entry_C))
             btn_start.place(anchor=CENTER, x=285, y=470)
 
         elif corner == 'B':
-            entry_A = Entry(width=5, validate='key', validatecommand=vcmd)
+            entry_A = Entry(width=4, validate='key', validatecommand=vcmd, font=("Arial", 14), bg="gray", fg="black") 
             entry_A.place(anchor=CENTER, x=200,y=380)
 
-            entry_C = Entry(width=5, validate='key', validatecommand=vcmd)
+            entry_C = Entry(width=4, validate='key', validatecommand=vcmd, font=("Arial", 14), bg="gray", fg="black") 
             entry_C.place(anchor=CENTER, x=470,y=380)
 
             btn_start = Button(text="Найти угол",font=["Arial",14], width=15, height=2, command=lambda: start(entry_A, entry_C))
             btn_start.place(anchor=CENTER, x=285, y=470)
 
         elif corner == 'C':
-            entry_A = Entry(width=5, validate='key', validatecommand=vcmd)
+            entry_A = Entry(width=4, validate='key', validatecommand=vcmd, font=("Arial", 14), bg="gray", fg="black") 
             entry_A.place(anchor=CENTER, x=200,y=380)
 
-            entry_B = Entry(width=5, validate='key', validatecommand=vcmd)
+            entry_B = Entry(width=4, validate='key', validatecommand=vcmd, font=("Arial", 14), bg="gray", fg="black") 
             entry_B.place(anchor=CENTER, x=330,y=80)
 
             btn_start = Button(text="Найти угол",font=["Arial",14], width=15, height=2, command=lambda: start(entry_A, entry_B))

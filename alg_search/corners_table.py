@@ -110,7 +110,7 @@ def corners_table(main_win):
 
     page_list("start")
 
-    ent_num = Entry(width=15, validate='key', validatecommand=vcmd)
+    ent_num = Entry(font=("Arial", 15), width=12, validate='key', validatecommand=vcmd,bg="gray", fg="black")
     ent_num.place(anchor=CENTER, x=540, y=450)
 
     btn_search = Button(text="Начать поиск", width=12, height=1, compound="top",  font=("Arial", 16), command=lambda: page_list("search", ent_num))

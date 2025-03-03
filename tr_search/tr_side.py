@@ -24,10 +24,10 @@ def tr_side(main_win):
         btn_AC.destroy()
         btn_AB.destroy()
         
-        entry_BC = Entry(width=5, validate='key', validatecommand=vcmd)
+        entry_BC = Entry(width=4, validate='key', validatecommand=vcmd, font=("Arial", 14), bg="gray", fg="black") 
         entry_BC.place(anchor=CENTER, x=280, y=400)
 
-        entry_AB = Entry(width=5, validate='key', validatecommand=vcmd)
+        entry_AB = Entry(width=4, validate='key', validatecommand=vcmd, font=("Arial", 14), bg="gray", fg="black") 
         entry_AB.place(anchor=CENTER, x=350, y=230)
         
         btn_back= Button(text="В начало", width=8, height=2, compound="top",  font=("Arial", 16), command=lambda: tr_side(main_win))
@@ -81,10 +81,10 @@ def tr_side(main_win):
         btn_AC.destroy()
         btn_AB.destroy()
 
-        entry_AC = Entry(width=5, validate='key', validatecommand=vcmd)
+        entry_AC = Entry(width=4, validate='key', validatecommand=vcmd, font=("Arial", 14), bg="gray", fg="black") 
         entry_AC.place(anchor=CENTER, x=140, y=250)
 
-        entry_AB = Entry(width=5, validate='key', validatecommand=vcmd)
+        entry_AB = Entry(width=4, validate='key', validatecommand=vcmd, font=("Arial", 14), bg="gray", fg="black") 
         entry_AB.place(anchor=CENTER, x=350, y=230)
 
         btn_back= Button(text="В начало", width=8, height=2, compound="top",  font=("Arial", 16), command=lambda: tr_side(main_win))
@@ -136,10 +136,10 @@ def tr_side(main_win):
         btn_AC.destroy()
         btn_AB.destroy()
 
-        entry_AC = Entry(width=5, validate='key', validatecommand=vcmd)
+        entry_AC = Entry(width=4, validate='key', validatecommand=vcmd, font=("Arial", 14), bg="gray", fg="black") 
         entry_AC.place(anchor=CENTER, x=140, y=250)
 
-        entry_BC = Entry(width=5, validate='key', validatecommand=vcmd)
+        entry_BC = Entry(width=4, validate='key', validatecommand=vcmd, font=("Arial", 14), bg="gray", fg="black") 
         entry_BC.place(anchor=CENTER, x=280, y=400)
 
         btn_back= Button(text="В начало", width=8, height=2, compound="top",  font=("Arial", 16), command=lambda: tr_side(main_win))

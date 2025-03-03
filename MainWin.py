@@ -4,6 +4,7 @@ from PIL import ImageTk
 import alg_search.square_table as square_table
 import alg_search.calculator as calculator
 import alg_search.corners_table as corners_table
+import alg_search.search_percent as search_percent
 import tr_search.tr_side as tr_side
 import tr_search.tr_corner as tr_corner
 import tr_search.tr_perimeter as tr_perimeter
@@ -45,8 +46,8 @@ def MainWin(main_win):
     btn_corners_table= Button(text="Таблица\nуглов",image=corners_table_img, width=140, height=150, compound="top",  font=("Arial", 16), command=lambda: corners_table.corners_table(main_win))
     btn_corners_table.place(anchor="c", y=330, x = 510)
 
-    percent = ImageTk.PhotoImage(file = "MenuPng/percent.png")
-    btn_percent= Button(text="Найти %\n от числа",image=percent, width=140, height=150, compound="top",  font=("Arial", 16))
+    search_percent_img = ImageTk.PhotoImage(file = "MenuPng/percent.png")
+    btn_percent= Button(text="Найти %\n от числа",image=search_percent_img, width=140, height=150, compound="top",  font=("Arial", 16), command=lambda: search_percent.search_percent(main_win))
     btn_percent.place(anchor="c", y=330, x = 710)
 
     derivative = ImageTk.PhotoImage(file = "MenuPng/derivative.png")

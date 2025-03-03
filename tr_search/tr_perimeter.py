@@ -86,13 +86,13 @@ def tr_perimeter(main_win):
     lbl_C = Label(font=["Arial",14], bg="black", fg="White", text="C")
     lbl_C.place(anchor=CENTER, x=440,y=380)
 
-    ent_AB = Entry(width=5, validate='key', validatecommand=vcmd)
+    ent_AB = Entry(width=4, validate='key', validatecommand=vcmd, font=("Arial", 14), bg="gray", fg="black") 
     ent_AB.place(anchor=CENTER, x=205, y=230)
 
-    ent_BC = Entry(width=5, validate='key', validatecommand=vcmd)
+    ent_BC = Entry(width=4, validate='key', validatecommand=vcmd, font=("Arial", 14), bg="gray", fg="black") 
     ent_BC.place(anchor=CENTER, x=395, y=230)
 
-    ent_AC = Entry(width=5, validate='key', validatecommand=vcmd)
+    ent_AC = Entry(width=4, validate='key', validatecommand=vcmd, font=("Arial", 14), bg="gray", fg="black") 
     ent_AC.place(anchor=CENTER, x=300, y=395)
 
     btn_start = Button(text="Найти периметр",font=["Arial",14], width=15, height=2, command=start)
