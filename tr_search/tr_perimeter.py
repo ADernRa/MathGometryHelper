@@ -98,5 +98,5 @@ def tr_perimeter(main_win):
     btn_start = Button(text="Найти периметр",font=["Arial",14], width=15, height=2, command=start)
     btn_start.place(anchor=CENTER, x=285, y=470)
     
-    btn_back= Button(text="В меню", width=8, height=2, compound="top",  font=("Arial", 16), command=lambda: MainWin.MainWin(main_win))
-    btn_back.place(anchor="c", y=50, x = 1000)
+    btn_menu= Button(text="В меню", width=8, height=2, compound="top",  font=("Arial", 16), command=lambda: MainWin.MainWin(main_win))
+    btn_menu.place(anchor="c", y=50, x = 1000)
